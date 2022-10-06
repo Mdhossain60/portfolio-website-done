@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .container{
+        width: 1170px;
+        margin: auto;
+    }
+     .row{
+        display: flex;
+        flex-wrap: wrap;
+     }
+     a {
+        text-decoration: none;
+     }
+     ul,ol{
+        list-style: none;
+     }
+     
+     .button{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: var(--maincolor);
+     
+     }
+      .align-bottom{
+         align-items: bottom;
+      }
+      .align-center{
+         align-items: center;
+      }
+     .body{
+        font-family: var(--praimaryfont);
+     }
+
+    :root{
+       --praimaryfont:'Poppins', sans-serif;
+       --secondaryfont:'Playfair Display', serif;
+       --maincolor:#676CDB;
+       --bannerheight:743px;
+    }
+
+     /*COMMON CSS ENDS*/
+
+     /*NAVBAR START HERE*/
+
+    nav {
+      position: absolute;
+      width: 100%;
+      margin-top: 17px;
+    }
+
+
+     nav .logo{
+      width: 20%;
+     }
+
+     nav .menu{
+      width: 65%;
+     
+     }
+     nav .contactBtn{
+      width: 15%;
+     } 
+     nav .menu ul{
+      text-align: center;
+     }
+     nav .menu ul li{
+      display: inline-block;
+       }
+
+
+     nav .menu ul li a{
+      font-weight: 500;
+      font-size: 20px;
+      padding: 0 20px;
+      line-height: 30px;
+      color:  #FFFFFF;
+      
+     }
+
+    
+
+      /*NAVBAR START ENDS*/
+
+      /*BANNER SECTION START*/
+      #banner {
+        height: var(--bannerheight);
+        background-image: url(../image/bbbbbbbbb.png);
+       background-position: center;
+       background-size: cover;
+      }
+
+      #banner .row{
+         height: var(--bannerheight);
+      }
+
+      
+      #banner .banner_ctn h2{
+         font-weight: 700;
+         font-size: 90px;
+         line-height: 120%;
+         color:  #FFFFFF;
+         font-family: var(--secondaryfont);
+      }
+      #banner .banner_ctn p{
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 180%;
+         color: rgba(255, 255, 255, 0.5);
+         width: 404px;
+         word-spacing: 15px;
+         margin: 20px 0;
+         
+      }
+
+      #banner .banner_ctn a:last-child{
+         margin-left: 10px;
+         background-color: transparent;
+        
+      }
+      #banner .banner_ctn a:last-child:hover{
+         border: 1px solid white;
+         transition: 0.5s;
+         background-color: var(--maincolor);
+      }
+       /*BANNER SECTION ENDS*/
+
+        /*SKILL SECTION START*/
+        #skill{
+         height: 200px;
+         background-color: black;
+        
+        } 
+
+        #skill .row{
+         height: 200px;
+        } 
+        #skill .skill_image{
+         text-align:left;
+         width: 100%;
+        
+        }
+        #skill .skill_image a{
+         margin: 0 75px;
+         display: inline-block;
+         transition: 0.5s;
+       
+        }
+        #skill .skill_image a:hover{
+         background-color: rgb(114, 107, 98);
+         border: 1px solid wheat;
+        
+        }
+         /*SKILL SECTION ENDS*/
+
+         /*SECOND SECTION START*/
+         #second{
+            padding: 125px 0;
+            background-color: #222A36;
+         }
+
+         #second .left{
+            width: 30%;
+         }
+
+         #second .right{
+            width: 70%;
+         }
+
+         #second .left h2{
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 120%;
+            color: #676CDB;
+            margin-top: 25px;
+         }
+         #second .left p{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 180%;
+            color:  #FFFFFF;
+         }
+
+         #second .right .right_card{
+            width: calc(33.33% - 16px);
+            padding: 175px 0 35px 0;
+            background-color:  #C4C4C4;
+            margin: 0 8px;
+          transition: 0.5s ;
+         }
+         #second .right  h3{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 180%;
+            color: #FFFFFF;
+         }
+         #second .right .right_card a{
+            display: block;
+            margin-left: 30px;
+            color: #000000;
+         }
+         #second .right .right_card p {
+            font-weight: 700;
+             font-size: 20px;
+             line-height: 120%;
+            margin-left: 20px;
+            margin: 10px 0 0 30px;
+            color: #000000;
+             display: inline-block;
+
+         }
+         #second .right .right_card:hover{
+        background-color: #676CDB;
+        
+         }
+         #second .right .right_card:hover *{
+            color: white;
+          
+         }
+        
+         /*SECOND SECTION ENDS*/
+
+
+         /*THIRD SECTION START*/
+        #third {
+           padding: 100px 0;
+        background-color:  #2D3540;
+         }
+
+         #third .img-card{
+            width: 30%;
+            display: block;
+         }
+
+         #third .contant{
+            width: calc(45% - 50px);
+            margin: 0 25px;
+            
+         }
+
+         #third .contant h3{
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 120%;
+            color: #C4C4C4;
+            margin-left: 50px;
+          
+            display: block;
+         }
+         #third .contant p{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 180%;
+            color: #FFFFFF;
+            margin-left: 50px;
+            padding-bottom: 30px;
+            
+
+         }
+         #third .contant .frist_arrow{
+            margin-left: 50px;
+            font-size: 19px;
+         }
+         #third .contant a:last-child{
+            margin-left: 15px;
+            font-size: 19px;
+         }
+     
+          
+            
+         
+         #third .last_contant{
+            width: calc(25% - 30px);
+            margin-left: 15px;
+         } 
+
+         #third .last_contant p{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 120%;
+            color: #FFFFFF;
+            padding: 20px 0;
+            
+         }
+         #third .last_contant span{
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 120%;
+            color: #676CDB;
+            padding: 20px 0;
+         }
+         /*THIRD SECTION ENDS*/
+
+
+         /*footer section start*/
+        #footer {
+            padding: 77px 0 2px 0;
+            background-color: #000000 ;
+         }
+         #footer .frist_site{
+            width: 50%;
+         }
+
+
+         #footer .frist_site  p{
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 120%;
+            color: #FFFFFF;
+         }
+         #footer .frist_site .row a{
+            padding: 10px 25px;
+            font-size: 22px ;
+            font-weight: 500;
+            color: #FFFFFF;
+         }
+         #footer .last_site{
+            width: 50%;
+         }
+         #footer .last_site li{
+            padding: 25px 0;
+            margin-left: 55px;
+         }
+         #footer .last_site li p{
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 120%;
+            color: #FFFFFF;
+         }
+
+         #footer .last_site a{
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 120%;
+            color: #676CDB;
+            margin-left: 55px;
+         }
+         #footer .last_site a span{
+            margin-left: 15px;
+            font-size: 19px;
+         }
+
+       #footer .footer_last p{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 180%;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            letter-spacing: 0.3px;
+            padding: 60px 0;
+            margin-left: -7%;
+             padding-bottom: -15px;
+            display: block;
+          
+         }
+         /*footer section ends*/
